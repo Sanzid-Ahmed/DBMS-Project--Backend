@@ -1,11 +1,13 @@
 package com.example.PcBuildingWeb.Controller;
 
 import com.example.PcBuildingWeb.Service.service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class controller {
     private final service login_service;
 
